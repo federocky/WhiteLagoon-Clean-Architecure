@@ -1,0 +1,89 @@
+## Archivos generados por Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Archivos generados por compilación
+bin/
+obj/
+
+## Archivos de publicación
+out/
+publish/
+
+## Archivos de dependencias
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+## Paquetes NuGet
+*.nupkg
+*.snupkg
+*.nuspec
+*.psmdcp
+packages/
+# Para evitar subir paquetes restaurados (usualmente no se necesita esta carpeta en .NET Core)
+**/packages/*
+
+## Archivos de configuración de Rider/JetBrains
+.idea/
+
+## Archivos de logs
+*.log
+
+## Archivos de usuario de VS Code
+.vscode/
+
+## Sistema operativo
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+## Archivos temporales
+*.tmp
+*.bak
+*.swp
+*~
+
+## Archivos de test y cobertura
+TestResults/
+*.coverage
+*.coveragexml
+*.codecoverage
+*.testsettings
+*.vsmdi
+*.testrunconfig
+*.results
+*.trx
+coverage/
+
+## Archivos de herramientas de análisis
+*.ruleset
+*.editorconfig.user
+
+## Docker
+**/docker-compose.override.yml
+**/.dockerignore
+
+## Archivos secretos
+secrets.json
+
+## Archivos de publicación del Web Project
+wwwroot/dist/
+wwwroot/node_modules/
+
+## NodeJS (si usas en el proyecto web)
+node_modules/
+npm-debug.log
+yarn-error.log
+.pnpm-debug.log
+.eslintrc.js
+.eslintcache
+.prettier*
+
+## Configuración global
+global.json
+
