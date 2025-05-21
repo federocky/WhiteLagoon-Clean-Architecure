@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\WhiteLagoon.Infrastructure\WhiteLagoon.Infrastructure.csproj" />
+	<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.20" />
   </ItemGroup>
 
 </Project>
