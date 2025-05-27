@@ -31,9 +31,70 @@ namespace WhiteLagoon.Web.Controllers
             {
                 _db.Villas.Add(villa);
                 _db.SaveChanges();
+                TempData["success"] = "Villa created";
                 return RedirectToAction("Index");
             }
+
+            TempData["error"] = "Villa cannot be created";
             return View();
         }
+
+        public IActionResult Update(int villaId)
+        {
+            Villa? villa = _db.Villas.FirstOrDefault(x => x.Id == villaId);
+
+            if(villa is null)
+            {
+                return RedirectToAction("Error", "Home");
+            }
+
+            return View(villa);
+        }
+
+        [HttpPost]
+        public IActionResult Update(Villa villa)
+        {
+            if (ModelState.IsValid && villa.Id != 0)
+            {
+                _db.Villas.Update(villa);
+                _db.SaveChanges();
+                TempData["success"] = "Villa has been updated";
+                return RedirectToAction("Index");
+            }
+
+            TempData["error"] = "Villa cannot be updated";
+            return View();
+        }
+
+        public IActionResult Delete(int villaId)
+        {
+            Villa? villa = _db.Villas.FirstOrDefault(x => x.Id == villaId);
+
+            if (villa is null)
+            {
+                return RedirectToAction("Error", "Home");
+            }
+
+            return View(villa);
+        }
+
+        [HttpPost]
+        public IActionResult Delete(Villa villa)
+        {
+            Villa? dbVilla = _db.Villas.FirstOrDefault(v => v.Id == villa.Id);
+
+            if (dbVilla is not null)
+            {
+                _db.Villas.Remove(dbVilla);
+                _db.SaveChanges();
+                TempData["success"] = "Villa deleted";
+                return RedirectToAction("Index");
+            }
+
+            TempData["error"] = "Villa cannot be deleted";
+
+            return View();
+        }
+
     }
 }
