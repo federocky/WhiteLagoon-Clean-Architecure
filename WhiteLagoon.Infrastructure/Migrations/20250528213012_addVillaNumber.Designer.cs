@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using WhiteLagoon.Infrastructure.Data;
 
@@ -11,9 +12,11 @@ using WhiteLagoon.Infrastructure.Data;
 namespace WhiteLagoon.Infrastructure.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250528213012_addVillaNumber")]
+    partial class addVillaNumber
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -145,13 +148,13 @@ namespace WhiteLagoon.Infrastructure.Migrations
                         },
                         new
                         {
-                            Villa_Number = 501,
-                            VillaId = 5
+                            Villa_Number = 301,
+                            VillaId = 3
                         },
                         new
                         {
-                            Villa_Number = 502,
-                            VillaId = 5
+                            Villa_Number = 302,
+                            VillaId = 3
                         });
                 });
 
