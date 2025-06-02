@@ -32,7 +32,7 @@ namespace WhiteLagoon.Web.Controllers
                 _db.Villas.Add(villa);
                 _db.SaveChanges();
                 TempData["success"] = "Villa created";
-                return RedirectToAction("Index");
+                return RedirectToAction(nameof(Index));
             }
 
             TempData["error"] = "Villa cannot be created";
@@ -59,7 +59,7 @@ namespace WhiteLagoon.Web.Controllers
                 _db.Villas.Update(villa);
                 _db.SaveChanges();
                 TempData["success"] = "Villa has been updated";
-                return RedirectToAction("Index");
+                return RedirectToAction(nameof(Index));
             }
 
             TempData["error"] = "Villa cannot be updated";
@@ -88,7 +88,7 @@ namespace WhiteLagoon.Web.Controllers
                 _db.Villas.Remove(dbVilla);
                 _db.SaveChanges();
                 TempData["success"] = "Villa deleted";
-                return RedirectToAction("Index");
+                return RedirectToAction(nameof(Index));
             }
 
             TempData["error"] = "Villa cannot be deleted";
