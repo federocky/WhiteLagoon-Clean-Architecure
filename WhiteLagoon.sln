@@ -5,7 +5,7 @@ VisualStudioVersion = 17.6.33723.286
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WhiteLagoon.Web", "WhiteLagoon.Web\WhiteLagoon.Web.csproj", "{1E2B6587-B8DB-45D3-BBC8-DEE180072D64}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WhiteLagoo.Application", "WhiteLagoo.Application\WhiteLagoo.Application.csproj", "{B7B33C18-ACAC-4A23-83A1-7845AD6378B3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WhiteLagoon.Application", "WhiteLagoo.Application\WhiteLagoon.Application.csproj", "{B7B33C18-ACAC-4A23-83A1-7845AD6378B3}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WhiteLagoon.Domain", "WhiteLagoon.Domain\WhiteLagoon.Domain.csproj", "{ABFDB7AD-9FBB-4588-BEA8-1DE9079AD410}"
 EndProject
