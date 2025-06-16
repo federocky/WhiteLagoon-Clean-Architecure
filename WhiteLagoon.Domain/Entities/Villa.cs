@@ -1,4 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.AspNetCore.Http;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace WhiteLagoon.Domain.Entities
 {
@@ -21,6 +23,8 @@ namespace WhiteLagoon.Domain.Entities
 
         [Display(Name="Image url")]
         public string? ImageUrl { get; set; }
+        [NotMapped]
+        public IFormFile? Image { get; set; }
 
         public DateTime Created_Date { get; set; }
 

@@ -42,8 +42,8 @@ namespace WhiteLagoon.Infrastructure.Migrations
                     { 201, null, 2 },
                     { 202, null, 2 },
                     { 203, null, 2 },
-                    { 301, null, 5 },
-                    { 302, null, 5 }
+                    { 301, null, 3 },
+                    { 302, null, 3 }
                 });
 
             migrationBuilder.CreateIndex(
