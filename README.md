@@ -11,7 +11,6 @@ A simple CRUD application with three entities, built as a first hands-on project
 ### 🚀 Highlights
 
 - 🧱 Clean Architecture structure  
-- 🗃️ CRUD operations on 3 entities  
 - 🧩 Layered separation: domain, application, infrastructure, presentation
 
 
